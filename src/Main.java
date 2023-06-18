@@ -1,16 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        int x = 500; // min сумма пополнения
+        int minSumAdded = 500; // min сумма пополнения
         int oneBonus = 50; //1 рублю за каждые полные 50 рублей пополнения
-        int z = 1000;
-        int addedAmount = z; // сумма пополнения
+        int addedAmount = 1000; // сумма пополнения
         int bonus;
         int finalAccountBalance;
-        int y = 200;
-        int startBalance = y;
+        int startBalance = 200;
 
         //формулы
-        if (addedAmount >= x) {
+        if (addedAmount >= minSumAdded) {
             bonus = addedAmount / oneBonus;
             finalAccountBalance = startBalance + addedAmount + bonus;
             System.out.println("Вы получили " + bonus + " бонусных рублей. Теперь баланс Вашего счета составляет " + finalAccountBalance +" рублей");
@@ -18,4 +16,4 @@ public class Main {
             System.out.println("Баланс Вашего счета составляет " + (startBalance + addedAmount) + " рублей.");
         }
     }
-}
+} 
