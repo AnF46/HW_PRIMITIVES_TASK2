@@ -3,8 +3,7 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 *.idea
-*.iml
-
+*HW_PRIMITIVES_TASK2.iml
 
 ### Eclipse ###
 .apt_generated
